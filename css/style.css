@@ -1,5 +1,5 @@
 /* RESET */
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;    
@@ -7,115 +7,245 @@
 /* /RESET */
 
 /* COMMON */
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(16, 16, 16);
+    font-size: 15px;
 }
 
-.container{
+/* .first-container {
+    max-width: 1500px;
+    margin: auto;
+} */
+  
+/* .container {
+    max-width: 1200px;
+    margin: auto;
+} */
+
+main {
+    background-color: white;
+}
+
+.container {
     width: 60%;
     margin: auto;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.button.access.white {
+    background-color: white;
+    color: black;
+}
+
+.button.size {
+    font-size: 18px;
+}
+  
+.button.browser {
+    background-color: #23272A;
+    color: white;
+}
+
+.button.download {
+    background-color: #7289DA;
+    color: white;
+}
+
+h1, h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8em;
+}
+  
+ul {
+    list-style-type: none;
+}
+
+
+
 /* header-up */
-.header-up .container{
+.header-up {
+    background-color: #255EE9;
+}
+
+.header-up .container {
     display: flex;
     justify-content: center;
     padding: 15px 0;
     font-size: 20px;
 }
 
-.header-up .container > *{
+.header-up .container > * {
     padding: 10px;
 }
 
 header .logo, 
-header .login{
+header .login {
   width: 20%;
 }
 
-header .login{
+header .login {
     text-align: right;
 }
   
-header .link{
+header .link {
     width: 60%;
     text-align: center;
 }
   
-header ul{
+header ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
 }
   
-header li{
-    padding: 0 5px;
+header li {
+    padding: 0 20px;
 }
 /* /header-up */
 
 /* header-down */
-.header-down{
+.header-down {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
     padding: 50px 0;
 }
   
-.box{
-    width: 75%;
+.box {
+    width: 63%;
     margin: auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.box * {
+    margin: 20px 10px;
 }
 /* /header-down */
 
 /* main */
-main .section{
+main .section {
     display: flex;
-    padding: 50px 0;
+    padding: 100px 0;
+}
+
+main .section:nth-child(even) {
+    background-color: #F6F6F6;
 }
   
-main .section .container{
+main .section .container {
     display: flex;
     justify-content: center;
 }
 
-main .section .middle{
-    flex-direction: row-reverse;
+main .section img {
+    padding-bottom: 100px;
 }
 
-.section .first-article{
+main .section.wave {
+    background-image: url(../img/wave.svg);
+    background-size: 100% 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+main .section.wave-reverse {
+    background-image: url(../img/wave.svg);
+    background-size: 100% 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    /* transform: scaleX(-1); */
+}
+  
+/* main .section.wave-reverse * {
+    transform: scaleX(-1);
+} */
+
+/* main .section .middle { 
+    flex-direction: row-reverse;
+} */
+
+.section .first-article {
     width: 60%;
 }
   
-.section .second-article{
+.section .second-article {
     width: 40%;
 }
 
-.section .last-article{
+.section .second-article * {
+    margin: 25px 0;
+}
+
+.section .last-article {
     width: 100%;
     margin: auto;
+    text-align: center;
+}
+
+.section .last-article img {
+    width: 100%;
+}
+
+.section .last-article p {
+    width: 85%;
+    margin: auto;
+}
+  
+.section .last-article h2,
+.section .last-article p {
+    margin-top: 22px;
+}
+
+.section .last-article .download h3 {
+    font-size: 25px;
+    line-height: 4em;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 /* /main */
 
 /* footer-up */
-.footer-up .container{
+.footer-up .container {
     display: flex;
     justify-content: center;
     padding: 10px 0 40px;
 }
  
-.large-article{
+.large-article {
     width: 30%;
 }
   
-.small-articles{
+.small-articles {
     display: flex;
     width: calc(100% - 30%);
 }
   
-.small{
+.small {
     width: 25%;
 }
 /* /footer-up */
 
 /* footer-down */
-.footer-end{
+.footer-end {
     width: 100%;
     margin: 30px auto 0;
     display: flex;
@@ -124,7 +254,7 @@ main .section .middle{
 }
   
 .footer-end .logo,
-.footer-end .button{
+.footer-end .button {
     padding: 5px 10px;
     font-size: 20px;
 }
@@ -132,81 +262,81 @@ main .section .middle{
 /* /COMMON */
 
 /* DEBUG */
-.debug .header-up{
+/* .debug .header-up {
     background-color: #ADD8E6;
-}
+} */
 
-.debug .header-up .container > *{
+/* .debug .header-up .container > * {
     background-color: #DAA520;
     border: 2px dashed;
-}
+} */
 
-.debug .header-down{
+/* .debug .header-down {
     background-color: #00008B;
     border-bottom: 4px solid #ADD8E6;
 }
   
-.debug .box{
+.debug .box { 
     background-color: #EE82EE;
     border: 2px dashed;
     height: 400px; 
-}
+} */
 
-.debug .section:nth-child(even){
+/* .debug .section:nth-child(even) {
     background-color: #D3D3D3;
-}
+} */
   
-.debug .section .container .article{
+/* .debug .section .container .article {
     border: 2px dashed;
     height: 480px;
 }
   
-.debug .first-article{
+.debug .first-article {
     background-color: #1E90FF;
 }
   
-.debug .second-article{
+.debug .second-article {
     background-color: #FFC0CB;
-}
+} */
 
-.debug .last-article{
+/* .debug .last-article {
     background-color: #228B22;
     border: 2px dashed;
     height: 910px;
-}
+} */
 
-.debug footer{
+.debug footer {
     background-color: #23272A;
 }
   
-.debug .footer-up{
+.debug .footer-up {
     border-bottom: 2px solid white;
 }
   
-.debug .footer-up .container > *{
+.debug .footer-up .container > * {
     height: 500px;
     border: 2px dashed;
 }
   
-.debug .large-article{
+.debug .large-article {
     background-color: #F08080;
 }
   
-.debug .small-articles{
+.debug .small-articles {
     background-color: #20B2AA;
 }
   
-.debug .small{
+.debug .small {
     border: 2px dashed white;
 }
 
-.debug .footer-end{
+.debug .footer-end {
     background-color: #7FFFD4;
     height: 80px;
 }
   
 .debug .footer-end .logo,
-.debug .footer-end .button{
+.debug .footer-end .button {
     background-color: #FFB6C1;
     border: 2px dashed;
 }
